@@ -1,0 +1,52 @@
+
+version: 2
+
+models:
+  - name: rewards_users
+    description: "rewards user model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: user_id
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+      - name: last_name
+      - name: email
+        tests:
+          - unique
+          - not_null
+      - name: contact
+      - name: gender
+      - name: dob
+      - name: location
+      - name: latitude
+      - name: longitude
+      - name: work_status
+      - name: preferred_languages
+      - name: is_mother
+      - name: family_type
+      - name: interests
+      - name: durables
+      - name: created_time
+      - name: updated_time
+      - name: is_deleted
+      - name: profession_type
+      - name: income_slab
+      - name: device_details
+      - name: is_email_verified
+      - name: referral_code
+      - name: referred_by
+      - name: state_name
+      - name: is_email_invalid
+      - name: is_rewards_disabled
+      - name: rewards_app_login
+      - name: is_expecting
+      - name: helpdesk_membership_id
+      - name: city
+      - name: user_tags
+      - name: rfm_cluster_score
